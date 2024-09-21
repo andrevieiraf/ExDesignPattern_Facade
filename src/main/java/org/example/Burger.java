@@ -4,10 +4,15 @@ public class Burger extends Produto{
 
     private int gramas;
 
-    public Burger (String descricao, double preco, int gramas){
-        this.getDescricao();
-        this.getPreco();
-        this.getGramas();
+//    exemplo do construtor com parametros
+//    public Burger (String descricao, double preco, int gramas){
+//        this.descricao = descricao;
+//        this.preco = preco;
+//        this.gramas = gramas;
+//    }
+
+    //construtor utilizado
+    public Burger() {
     }
 
     public int getGramas (){
@@ -17,6 +22,16 @@ public class Burger extends Produto{
     public void setGramas (int gramas){
         this.gramas = gramas;
     }
-//    Burger burger = new Burger();
-//    burger.setDescricao();
+
+
+    @Override
+    public String toString() {
+        return "Burger{" +
+                "gramas=" + gramas +
+                ", descricao='" + descricao + '\'' +
+                ", preco=" + preco +
+                '}';
+    }
 }
+
+

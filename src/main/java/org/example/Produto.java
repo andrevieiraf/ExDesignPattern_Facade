@@ -2,8 +2,8 @@ package org.example;
 
 public class Produto {
 
-    private String descricao;
-    private double preco;
+    protected String descricao;
+    protected double preco;
 
 //    public Produto (String descricao, double preco){
 //        this.descricao = descricao;
@@ -23,7 +23,7 @@ public class Produto {
     }
 
     public void setPreco (double preco){
-        this.descricao = descricao;
+        this.preco = preco;
     }
 
 }
